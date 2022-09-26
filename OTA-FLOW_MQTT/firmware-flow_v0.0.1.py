@@ -38,9 +38,9 @@ topic_pub = b'data/flow/1'
 
 last_message = 0
 
-mqtt_server = 'lalidts.com'
+mqtt_server = 'YOUR MQTT BROKER'
 
-upd_url="https://www.download.lalidts.com/upload/firmware-flow_v0.0.1.py"
+upd_url="URL UPDATE FIRMWARE"
 
 def restart_and_reconnect():
   #print('Failed to connect to MQTT broker. Reconnecting...')
