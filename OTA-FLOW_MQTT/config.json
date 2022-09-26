@@ -1,0 +1,19 @@
+{
+    "wifi": {
+        "SSID" : "4G-Weather",
+        "PSK" : "1234567890"
+    },
+    "mqtt": {
+        "broker" : "lalidts.com",
+        "client" : "flow-20220924-v0.0.1",
+        "prefix" : "wtr/",
+        "t_status" : "status",
+        "t_cons" : "consumption"
+    },
+    "pulsesPerLitre" : 2500,
+    "sensors": [
+        { "name": "hot", "pin": 14 },
+        { "name": "cold", "pin": 15 }
+    ],
+    "statusLed": 16
+}
