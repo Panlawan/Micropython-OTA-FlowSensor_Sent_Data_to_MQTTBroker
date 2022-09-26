@@ -1,5 +1,5 @@
 <?php
-$target_dir = "/var/www/downloads/upload/";
+$target_dir = "PATH OF FIRMWARE";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 
