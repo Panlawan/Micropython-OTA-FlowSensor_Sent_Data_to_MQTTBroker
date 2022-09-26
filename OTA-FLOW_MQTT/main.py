@@ -9,8 +9,8 @@ import machine #needed for the deep sleep function
 upd_url = program.upd_url
 
 #change your wifi credentials here.
-ssid = '4G UFI-8975'
-password = '1234567890'
+ssid = 'YOUR WIFI SSID'
+password = 'YOUR WIFI PASSWORD'
 
 
 OTA = 0
