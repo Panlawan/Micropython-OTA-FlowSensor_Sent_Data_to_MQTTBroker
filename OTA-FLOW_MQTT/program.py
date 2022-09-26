@@ -38,9 +38,9 @@ topic_pub = b'data/flow/1'
 
 last_message = 0
 
-mqtt_server = 'lalidts.com'
+mqtt_server = 'YOUR MQTT BROKER'
 
-upd_url="https://www.download.lalidts.com/upload/firmware-flow_v0.0.1.py"
+upd_url="YOUR URL FIRMWARE UPDATE"
 
 def restart_and_reconnect():
   #print('Failed to connect to MQTT broker. Reconnecting...')
@@ -116,15 +116,11 @@ def program_tasks():
     client.check_msg()
         
     if utime.ticks_diff(now2, last_message) > 7000:
-        #msg = b'{"flow" = %f, "Q": %f}' % frec, %Q
-            #json = '{"flow": {}, "Q": {} }'.format(frec, Q)
+
         msg = ujson.dumps(make_config(frec, Q))
         utime.sleep(1)
         client.publish(topic_pub, msg)
         last_message = now2
-    #except OSError as e:
-        #restart_and_reconnect()
-        #print(e)
         
 def make_config(a, b):
     return {'data': {'flow': a, "Q": b}}
